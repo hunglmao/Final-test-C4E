@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>finalTest</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="slotContainer"></div>
+
+      <button id="spinButton" onclick="spin()">Quay</button>
+      <br /><br />
+      <div class="buttonContainer">
+        <button id="slot1" class="slotImage" onclick="placeBet('slot1') ">
+          <img src="img/bau.png" alt="" />
+          <span>0</span>
+        </button>
+        <button id="slot2" class="slotImage" onclick="placeBet('slot2')">
+          <img src="img/tom.png" alt="" />
+          <span>0</span>
+        </button>
+        <button id="slot3" class="slotImage" onclick="placeBet('slot3')">
+          <img src="img/ca.png" alt="" />
+          <span>0</span>
+        </button>
+        <button id="slot4" class="slotImage" onclick="placeBet('slot4')">
+          <img src="img/cua.png" alt="" />
+          <span>0</span>
+        </button>
+        <button id="slot5" class="slotImage" onclick="placeBet('slot5')">
+          <img src="img/huou.png" alt="" />
+          <span>0</span>
+        </button>
+        <button id="slot6" class="slotImage" onclick="placeBet('slot6')">
+          <img src="img/ga.png" alt="" />
+          <span>0</span>
+        </button>
+      </div>
+      <span class="warningText">Lưu ý: <br> 
+        - Số lần đặt ở một 'hình' sẽ là số lần xuất hiện của các 'Hình' trên 'Kết quả' <br>
+        - Tổng số điểm đặt trong một lần, tối đa là 3 
+       </span>
+      <button id="resetButton" onclick="resetBets()">trở về</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
